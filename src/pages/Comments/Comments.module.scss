@@ -1,0 +1,98 @@
+.comments {
+    max-width: 600px;
+    padding: 40px 20px;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+
+    input,
+    textarea {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+            border-color: #999;
+        }
+    }
+
+    textarea {
+        min-height: 80px;
+        resize: vertical;
+    }
+
+    button {
+        align-self: flex-start;
+        padding: 8px 20px;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+            background: #111;
+        }
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.email {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.body {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.time {
+    font-size: 0.75rem;
+    color: #bbb;
+}

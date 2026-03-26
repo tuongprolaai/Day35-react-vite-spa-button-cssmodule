@@ -1,0 +1,84 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 4px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1rem;
+    font-family: inherit;
+    user-select: none;
+}
+
+.primary {
+    color: #fff;
+    background: #a423a4;
+    border-color: #a423a4;
+}
+
+.rounded {
+    border-radius: 999px;
+}
+
+.bordered {
+    color: #a423a4;
+    border-color: currentColor;
+}
+
+// Sizes
+.small {
+    padding: 2px 12px;
+    font-size: 1.4rem;
+}
+
+.medium {
+    padding: 4px 16px;
+    font-size: 1.6rem;
+}
+
+.large {
+    padding: 8px 24px;
+    font-size: 1.8rem;
+}
+
+// Disabled
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+// Loading
+.loading {
+    cursor: default;
+    pointer-events: none;
+
+    .content {
+        visibility: hidden;
+    }
+}
+
+.content {
+    visibility: visible;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

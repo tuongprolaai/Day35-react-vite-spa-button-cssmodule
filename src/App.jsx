@@ -1,12 +1,10 @@
-import Button from "./components/Button";
+import AppRoutes from "./components/AppRoutes";
+import "./styles/main.scss";
 
 function App() {
     return (
         <>
-            <Button>
-                <span>Submit</span>
-            </Button>
-            <Button title="Submit">Submit</Button>
+            <AppRoutes />
         </>
     );
 }

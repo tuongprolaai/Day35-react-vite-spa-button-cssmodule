@@ -1,0 +1,72 @@
+.weather {
+    padding: 40px 20px;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+.select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: #999;
+    }
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 32px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    min-width: 220px;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    button {
+        margin-top: 8px;
+        align-self: flex-start;
+        padding: 6px 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.condition {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.humidity {
+    font-size: 0.9rem;
+    color: #888;
+}
